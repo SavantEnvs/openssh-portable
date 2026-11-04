@@ -1,0 +1,6 @@
+project: savantenvs/openssh-portable
+target: authfd_reply_fuzz
+cmds:
+  - cmd: /mayhem/authfd_reply_fuzz
+    libfuzzer: true
+    timeout: 60

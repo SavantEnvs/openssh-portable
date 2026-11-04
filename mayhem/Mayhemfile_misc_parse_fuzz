@@ -1,0 +1,9 @@
+project: savantenvs/openssh-portable
+target: misc_parse_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/misc_parse_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/misc_parse_fuzz
+    libfuzzer: true
+    timeout: 60

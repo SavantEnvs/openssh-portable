@@ -1,0 +1,6 @@
+project: savantenvs/openssh-portable
+target: agent_fuzz
+cmds:
+  - cmd: /mayhem/agent_fuzz
+    libfuzzer: true
+    timeout: 60

@@ -1,0 +1,9 @@
+project: savantenvs/openssh-portable
+target: authkeys_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/authkeys_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/authkeys_fuzz
+    libfuzzer: true
+    timeout: 60

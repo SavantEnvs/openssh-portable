@@ -1,0 +1,1 @@
+command="x",restrict,pty,port-forwarding,agent-forwarding,X11-forwarding,user-rc

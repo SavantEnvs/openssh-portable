@@ -1,0 +1,9 @@
+project: savantenvs/openssh-portable
+target: sntrup761_enc_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sntrup761_enc_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/sntrup761_enc_fuzz
+    libfuzzer: true
+    timeout: 60
