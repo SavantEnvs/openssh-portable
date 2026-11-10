@@ -1,0 +1,9 @@
+project: savantenvs/openssh-portable
+target: sftp_ls_fuzz-mined-b99b848
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sftp_ls_fuzz-mined-b99b848/testsuite
+cmds:
+  - cmd: /mayhem/sftp_ls_fuzz
+    libfuzzer: true
+    timeout: 60
